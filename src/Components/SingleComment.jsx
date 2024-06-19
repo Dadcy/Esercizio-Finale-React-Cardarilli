@@ -1,5 +1,5 @@
-import React from 'react'
-import { Button, ListGroupItem } from 'react-bootstrap'
+import React from 'react';
+import { Button, ListGroupItem } from 'react-bootstrap';
 
 import axios from '../AxiosApi/AxiosApi';
 import { StarFill } from 'react-bootstrap-icons';
@@ -17,9 +17,10 @@ export default function SingleComment({comment,setUpdateReviews,updateReviews}) 
  
  
     return (
-    <ListGroupItem>
-    {Array.from({length: comment.rate}).map(rate => <StarFill />)} {comment.comment} 
-    <Button variant="danger" className='float-end'onClick={() =>removeComment(comment)}>x</Button>
+    <ListGroupItem className='my-1' style={{border:'2px solid coral'}}>
+    <p className='me-1'>{Array.from({length: comment.rate}).map(rate => <StarFill />)}</p> <p className=''>{comment.comment} </p>
+    <Button variant="danger" onClick={() =>removeComment(comment)}>DELETE</Button>
+   
     </ListGroupItem>
 
   )

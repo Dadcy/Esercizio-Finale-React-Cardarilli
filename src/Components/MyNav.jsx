@@ -16,7 +16,7 @@ export default function MyNav({search,handleSearch}) {
       <Navbar bg={updateContext} data-bs-theme={updateContext} >
         <Container>
           <Link className='nav-link'>
-              <Navbar.Brand to="/">EPICBOOKS</Navbar.Brand>
+              <Navbar.Brand to="/">HOPE BOOKS</Navbar.Brand>
           </Link>
           <Nav className="me-auto">
             <Link className='nav-link' to="/">Home</Link>

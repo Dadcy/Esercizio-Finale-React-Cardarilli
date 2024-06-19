@@ -39,10 +39,9 @@ function App() {
           <Container className='my-3'>      
               < Welcome/>
               <Routes>
-                <Route index element={<AllTheBooks books={fantasy} search={search} />} /> 
+                <Route index element={<AllTheBooks  books={fantasy} search={search} />} /> 
                 <Route path='/details/:asin' element={<BookDetails />} /> 
                 <Route path='*' element={<NotFound />} /> 
-
               </Routes>
                          
               {/* <Button variant="link" onClick={() => setType('fantasy')}> Fantasy </Button>

@@ -53,7 +53,7 @@ export default function AddComment({elementId,setUpdateReviews,updateReviews}) {
         </Form.Select>
       </Form.Group>
       <Form.Group className="mb-3">
-        <Button variant="outline-info" onClick={sendObjComment}>Conferma la recensione</Button>
+        <Button variant="outline-primary" onClick={sendObjComment}>Conferma la recensione</Button>
       </Form.Group>
     </Form>
   )
