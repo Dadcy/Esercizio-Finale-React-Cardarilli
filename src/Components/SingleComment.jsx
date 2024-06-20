@@ -17,7 +17,7 @@ export default function SingleComment({comment,setUpdateReviews,updateReviews}) 
  
  
     return (
-    <ListGroupItem className='my-1' style={{border:'2px solid coral'}}>
+    <ListGroupItem  className='my-1' style={{border:'2px solid coral'}} data-testid="singleComment">
         <p className='me-1'>{Array.from({length: comment.rate}).map(rate => <StarFill />)}</p> <p className=''>{comment.comment} </p>
         <Button variant="danger" onClick={() =>removeComment(comment)}>DELETE</Button>
     </ListGroupItem>

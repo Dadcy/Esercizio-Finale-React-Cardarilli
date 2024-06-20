@@ -21,7 +21,7 @@ export default function SingleBook( {book, selected, setSelected} ) {
         <Card.Img  variant="top" src={book.img} style={{width:'100%', height:'300px'}}/>
           <Card.Body>
             <Card.Title onClick={() => navigate('/details/'+book.asin)}>{book.title}</Card.Title>
-            data.testid="bookCard"
+           
           </Card.Body> 
       </Card>
       
