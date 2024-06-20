@@ -27,7 +27,7 @@ useEffect(() => {
 }, [updateReviews,asin])
 
   return (
-    <div>
+    <div data-testid="area-component">
     {loading && <div className='text-center mt-2'><Spinner className='my-4' animation="grow" /></div>}
     {error && <div className='text-center mt-2'>
                 <Alert key={"info"} variant={"info"}> Problemi nel caricamento</Alert></div>}

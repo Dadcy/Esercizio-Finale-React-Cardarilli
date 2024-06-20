@@ -14,15 +14,17 @@ export default function SingleBook( {book, selected, setSelected} ) {
   return (
  
     <Col>
-      <Card className='my-3' bg={updateContext} data-bs-theme={updateContext} style={{ width: "18rem", height:'400px', border: selected === book.asin ? "2px solid red" :"none", cursor:"pointer"}} 
+      <Card className='my-3' bg={updateContext} data-bs-theme={updateContext} style={{ width: "18rem", height:'400px', border: selected === book.asin ? "2px solid red" :"none", cursor:"pointer" }} 
       //prende l'asin del book all'onClick
-      onClick={() => setSelected(book.asin)}>  
+      onClick={() => setSelected(book.asin)}
+      data-testid="bookCard">  
         <Card.Img  variant="top" src={book.img} style={{width:'100%', height:'300px'}}/>
           <Card.Body>
             <Card.Title onClick={() => navigate('/details/'+book.asin)}>{book.title}</Card.Title>
+            data.testid="bookCard"
           </Card.Body> 
       </Card>
-
+      
     </Col>
   );
 }

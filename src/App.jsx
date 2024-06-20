@@ -21,8 +21,7 @@ import romance from './books/romance.json';
 import scifi from './books/scifi.json';
 
 function App() {
-// let [type,setType] = useState('fantasy');
-    //prima visualizzazione in pagina
+
     const [search,setSearch] = useState("");// campo di ricerca
     const handleSearch = (e) => setSearch(e.target.value);//metodo di ricerca
     
@@ -44,16 +43,7 @@ function App() {
                 <Route path='*' element={<NotFound />} /> 
               </Routes>
                          
-              {/* <Button variant="link" onClick={() => setType('fantasy')}> Fantasy </Button>
-              <Button variant="link" onClick={() => setType('history')}> History </Button>
-              <Button variant="link" onClick={() => setType('horror')}> Horror </Button>
-              <Button variant="link" onClick={() => setType('romance')}> Romance </Button>
-              <Button variant="link" onClick={() => setType('scifi')}> Scifi </Button>
-              {type === 'fantasy' && <AllTheBooks books={fantasy} search={search}/>}   
-              {type === 'history' && <AllTheBooks books={history} search={search}/> }
-              {type === 'horror' && <AllTheBooks books={horror}  search={search}/> }
-              {type === 'romance' && <AllTheBooks books={romance} search={search}/> }
-              {type === 'scifi' && <AllTheBooks books={scifi} search={search}/>} */}
+  
           </Container> 
           < MyFooter/>
         </BrowserRouter>
